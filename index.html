@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#hero"><img src="logo.jpeg"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo2">
+            <a href="#hero"><img src="logo3.jpeg"></a>
+        </div>
+    </header>    
+    
+    <section class="hero" id="hero">
+        <div class="hero-slider">
+            <img src="kopi3.jpg" class="slide active">
+            <img src="kopii.jpg" class="slide">
+            <img src="kopiii.jpg" class="slide">
+        </div>
+        <div class="hero-text">
+            <h1>Rasakan Setiap Tegukan, Nikmati Setiap Momen</h1>
+            <a href="#about" class="explore-btn">Telusuri Lebih Lanjut</a>
+        </div>
+    </section>  
+    
+    <div id="about"></div>
+    
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Coffee hadir untuk memberikan pengalaman menikmati kopi berkualitas dengan cita rasa khas. Dengan biji kopi pilihan dan proses pembuatan yang terjaga, kami berkomitmen menghadirkan secangkir kopi terbaik untuk menemani setiap momen berharga pelanggan kami.</p>
+    </section>    
+    
+    <section class="about">
+        <h2>Kenapa Harus Coffee?</h2>
+    </section>
+    
+    <section class="fitur">
+        <div class="fitur-box">
+            <img src="biji.png" alt="Kualitas Premium">
+            <h3>Kualitas Premium</h3>
+            <p>Dibuat dari biji kopi pilihan terbaik.</p>
+        </div>
+        <div class="fitur-box1">
+            <img src="kopi4.png" alt="Aroma Menggoda">
+            <h3>Aroma Menggoda</h3>
+            <p>Membuat harimu lebih semangat.</p>
+        </div>
+        <div class="fitur-box2">
+            <img src="price.png" alt="Harga Terjangkau">
+            <h3>Harga Terjangkau</h3>
+            <p id="review">Nikmati rasa mewah dengan harga bersahabat.</p>
+        </div>
+    </section>
+    
+    <section class="reviews">
+        <h2>Apa Kata Pelanggan?</h2>
+        <div class="review-container">
+            <div class="review-slider">
+                <div class="review-card">
+                    <img src="costumer1.jpeg" alt="Customer 1">
+                    <p>"Kopi di sini punya rasa yang khas dan bikin ketagihan!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Andi, Jakarta</h4>
+                </div>
+                <div class="review-card">
+                    <img src="costumer2.jpeg" alt="Customer 2">
+                    <p>"Pelayanan ramah dan kualitas kopinya sangat baik!"</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>- Siti, Bandung</h4>
+                </div>
+                <div class="review-card">
+                    <img src="costumer3.jpeg" alt="Customer 3">
+                    <p>"Harga terjangkau, rasa mewah. Recommended!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Riko, Surabaya</h4>
+                </div>
+                <div class="review-card">
+                    <img src="costumer4.jpeg" alt="Customer 4">
+                    <p>"Tempat nyaman buat nongkrong sambil ngopi!"</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>- Rina, Bali</h4>
+                </div>
+                <div class="review-card">
+                    <img src="costumer5.jpeg" alt="Customer 5">
+                    <p>"Langganan di sini, karena tempatnya pas buat nugas!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Rama, Bali</h4>
+                </div>
+                <div class="review-card">
+                    <img src="costumer6.jpeg" alt="Customer 6">
+                    <p>"First time ke cafe ini, suka banget!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Mira, Bali</h4>
+                </div>
+            </div>
+            <div class="review-nav">
+                <button class="nav-btn" id="prevBtn">◄</button>
+                <button class="nav-btn" id="nextBtn">►</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Gallery Cafe</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="staff.jpeg" alt="Staff" onclick="zoomImage(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="interior.jpeg" alt="Interior Café" onclick="zoomImage(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="outview.jpeg" alt="Outdoor View" onclick="zoomImage(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="dessert.jpeg" alt="Dessert Café" onclick="zoomImage(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="meja.jpeg" alt="Meja Pelanggan" onclick="zoomImage(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="art.jpeg" alt="Latte Art" onclick="zoomImage(this)">
+            </div>
+        </div>
+    </section>    
+    
+    <div id="zoomModal" class="modal">
+        <span class="close" onclick="closeZoom()">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+    </div>
+    
+    
+    <section class="best">
+        <h2>Best Seller</h2>
+        <div class="best-seller">
+            <div class="menu">
+                <img src="lattee.png" alt="Latte">
+                <h3>Latte</h3>
+                <p>Espresso dengan susu steamed yang creamy.</p>
+            </div>
+            <div class="menu">
+                <img src="americano.png" alt="Americano">
+                <h3>Americano</h3>
+                <p>Espresso dengan tambahan air panas.</p>
+            </div>
+            <div class="menu">
+                <img src="cappuccinoo.png" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Espresso dengan susu berbusa yang lembut.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="order-container">
+        <a href="https://wa.me/62881038800897?text=Halo%20kak,%20saya%20mau%20pesan%20kopinya!" target="_blank" class="order">
+            Pesan Sekarang
+        </a>
+    </div>   
+    
+    <a href="https://wa.me/6281234567890" class="wa-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        Chat WhatsApp
+    </a>
+    
+    <footer>
+        <div class="social-media" id="contact">
+            <div class="social-icons">
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="tik-tok.png" alt="TikTok"></a>
+                <a href="#"><img src="gmail-logo.png" alt="Gmail"></a>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4007.4935045163165!2d106.7807815749905!3d-6.2401057937481825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f117edc0a535%3A0xdea157c9a6f9214d!2sJl.%20Sultan%20Iskandar%20Muda%20No.61%2C%20RT.3%2FRW.2%2C%20Kby.%20Lama%20Utara%2C%20Kec.%20Kby.%20Lama%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012240!5e1!3m2!1sid!2sid!4v1741850316775!5m2!1sid!2sid&gestureHandling=greedy" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+
+            </div>
+            <p>Hak Cipta &copy;2023 PT Coffee</p>
+        </div>
+    </footer>  
+    
+    <div id="backToTop" onclick="scrollToTop()">
+        ↑
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
